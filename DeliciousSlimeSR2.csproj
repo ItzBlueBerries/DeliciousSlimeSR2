@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<DebugType>embedded</DebugType>
+	<FileVersion></FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\iconSlimeDelicious.png" />
+    <None Remove="Assets\iconSlimeMoondew.png" />
+    <None Remove="Assets\iconSlimePomegranite.png" />
+    <None Remove="delicious_slime_ico.png" />
+    <None Remove="moondew_slime_ico.png" />
+    <None Remove="pomegranite_slime_ico.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\iconSlimeDelicious.png" />
+    <EmbeddedResource Include="Assets\iconSlimeMoondew.png" />
+    <EmbeddedResource Include="Assets\iconSlimePomegranite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\net6\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\net6\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\System\SteamLibrary\steamapps\common\Slime Rancher 2\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
